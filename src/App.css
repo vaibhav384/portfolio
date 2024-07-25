@@ -1,0 +1,304 @@
+.App {
+  text-align: center;
+}
+/* 
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+.text1{
+  /* border-right: 10px solid; */
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: 
+    typing1 5s steps(20, end) infinite,
+    cursor .5s step-end infinite alternate;
+}
+
+.text2{
+  /* border-right: 10px solid; */
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+
+  animation: 
+    typing2 5s steps(40, end) infinite,
+    cursor .8s step-end infinite alternate;
+}
+
+@keyframes cursor{
+  50% {border-color: transparent;}
+}
+
+@keyframes typing1{
+  0% { width: 0; }
+  50% { width: 100%; }
+  60% { width: 100%; }
+  100% { width: 0; }
+}
+
+
+@keyframes typing2{
+  0% { width: 0; }
+  50% { width: 100%; }
+  60% { width: 100%; }
+  100% { width: 0; }
+}
+
+.pr{
+  position: relative;
+}
+
+.pr1{
+  position: relative;
+}
+
+.pr2{
+  position: relative;
+}
+
+.pr3{
+  position: relative;
+}
+
+.pr4{
+  position: relative;
+}
+
+.pr5{
+  position: relative;
+}
+
+.pr6{
+  position: relative;
+}
+
+.pr7{
+  position: relative;
+}
+
+.pr8{
+  position: relative;
+}
+
+.pr i {
+  transition: transform 0.5s ease;
+}
+
+.pr1 i{
+  position: absolute;
+  left: 7rem;
+  top: 5rem;
+}
+
+.pr2 i{
+  position: absolute;
+  right: 32rem;
+  top: 2rem;
+}
+
+.pr3 i{
+  position: absolute;
+  right: 11rem;
+  top: 5rem;
+}
+
+.pr4 i{
+  position: absolute;
+  right: 19rem;
+  top: 21rem;
+}
+
+.pr5 i{
+  position: absolute;
+  left: 42rem;
+  bottom: -14rem;
+}
+
+.pr6 i{
+  position: absolute;
+  left: 4rem;
+  bottom: -26rem;
+}
+
+.pr7 i{
+  position: absolute;
+  left: 35rem;
+  bottom: -25rem;
+}
+
+.pr8 i{
+  position: absolute;
+  left: 31rem;
+  bottom: -2rem;
+}
+
+@keyframes upDown {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-2rem);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.icon-animation {
+  animation: upDown 3s infinite;
+}
+
+.footer {
+  background-color: #000000;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  /* padding-left: 5rem; */
+  display: flex ;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer h5 {
+  align-self: center;
+  color: #fff;
+  margin-left: 2rem;
+  font-weight: 350;
+  margin-right: 2rem;
+}
+
+.footer-1 {
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+}
+
+.footer i {
+  margin: 0rem 1.2rem;
+}
+
+.g {
+  background-color: #000000;
+  padding: 1rem 2rem;
+}
+
+.g1 {
+  background-color: #FCCC36;
+  height: 0.2rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.g p {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgb(169, 204, 223);
+}
+
+.g a {
+  text-decoration: none;
+  color: #FCD13E;
+}
+
+.g a:hover {
+  color: white;
+}
+
+.p {
+  background-color: #e7e5e5;
+  padding: 1rem 2rem;
+}
+
+.p1 {
+  background-color: #0b0b0a;
+  height: 0.1rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.vdrive img:hover{
+  opacity: 25;
+}
+
+.nav-link{
+  color: rgb(172, 171, 171);
+}
+
+.navbar a:hover{
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.project-item {
+  position: relative;
+  display: inline-block;
+}
+
+.project-image {
+  transition: filter 0.3s ease;
+  border-radius: 1rem;
+}
+
+.project-item:hover .project-image {
+  filter: blur(2px);
+}
+
+.overlay1 {
+  position: absolute;
+  height: 15rem;
+  width: 15rem;
+  top: 26%;
+  left: 40%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 3rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1; 
+}
+
+.project-item:hover .overlay1 {
+  opacity: 1;
+}
